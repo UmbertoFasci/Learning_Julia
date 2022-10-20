@@ -6,3 +6,5 @@ amphdata = CSV.read(joinpath(dirname(pathof(SpatialEcology)), "..", "data", "amp
 amphdata[1:3,1:6]
 
 amph = Assemblage(amphdata[4:end],amphdata[1:3], sitecolumns = false)
+
+plot(amph)
